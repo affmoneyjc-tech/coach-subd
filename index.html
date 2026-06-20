@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COACH Rewards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+font-family:'Inter',sans-serif;
+background:#f8f4eb;
+min-height:100vh;
+display:flex;
+justify-content:center;
+padding:30px 15px;
+color:#222;
+overflow-x:hidden;
+}
+.bg-glow{
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top left,#fffdf7 0%,transparent 40%),
+radial-gradient(circle at bottom right,#e8d9b8 0%,transparent 30%);
+pointer-events:none;
+}
+.container{
+width:100%;
+max-width:430px;
+position:relative;
+z-index:2;
+}
+.card{
+background:white;
+border-radius:38px;
+padding:35px 24px;
+box-shadow:0 25px 60px rgba(0,0,0,.08);
+}
+.logo{
+font-family:'Playfair Display',serif;
+font-size:62px;
+text-align:center;
+margin-bottom:25px;
+letter-spacing:2px;
+color:#222;
+}
+.reward-card{
+background:linear-gradient(135deg,#b38b4d,#e8c670);
+border-radius:28px;
+padding:25px;
+color:white;
+margin-bottom:25px;
+box-shadow:0 15px 40px rgba(179,139,77,.4);
+}
+.reward-label{
+font-size:13px;
+letter-spacing:2px;
+margin-bottom:10px;
+opacity:0.95;
+}
+.reward-value{
+font-family:'Playfair Display',serif;
+font-size:68px;
+line-height:1;
+margin-bottom:18px;
+}
+.reward-divider{
+height:1px;
+background:rgba(255,255,255,.4);
+margin-bottom:18px;
+}
+.reward-desc{
+font-size:15px;
+}
+.steps{
+background:#f8f4eb;
+border-radius:28px;
+padding:22px;
+}
+.step{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:22px;
+}
+.step:last-child{
+margin-bottom:0;
+}
+.number{
+width:34px;
+height:34px;
+border-radius:50%;
+background:#b38b4d;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:700;
+flex-shrink:0;
+}
+.step span{
+font-size:16px;
+}
+.trust{
+display:flex;
+justify-content:center;
+gap:18px;
+margin:24px 0;
+font-size:14px;
+color:#666;
+}
+.cta{
+width:100%;
+border:none;
+padding:20px;
+font-size:22px;
+font-weight:700;
+border-radius:50px;
+cursor:pointer;
+color:white;
+background:linear-gradient(135deg,#b38b4d,#e8c670);
+transition:.3s;
+}
+.cta:hover{
+transform:translateY(-2px);
+box-shadow:0 15px 35px rgba(179,139,77,.35);
+}
+.disclaimer{
+text-align:center;
+font-size:13px;
+color:#888;
+margin-top:18px;
+}
+.social{
+text-align:center;
+margin-top:35px;
+}
+.avatars{
+display:flex;
+justify-content:center;
+margin-bottom:12px;
+}
+.avatar{
+width:50px;
+height:50px;
+border-radius:50%;
+background:#ddd;
+margin-left:-8px;
+border:3px solid white;
+}
+.social p{
+color:#555;
+font-size:15px;
+}
+.benefits{
+margin-top:30px;
+background:white;
+border-radius:28px;
+padding:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.06);
+}
+.benefit{
+text-align:center;
+padding:15px 0;
+border-bottom:1px solid #eee;
+}
+.benefit:last-child{
+border:none;
+}
+.benefit h3{
+margin-top:10px;
+font-size:18px;
+}
+.benefit p{
+font-size:14px;
+color:#666;
+margin-top:6px;
+}
+.footer{
+text-align:center;
+padding:25px 0;
+color:#888;
+font-size:13px;
+}
+.sparkle{
+position:fixed;
+font-size:22px;
+color:#d4af37;
+animation:float 4s ease-in-out infinite;
+}
+.s1{left:10%;top:20%;}
+.s2{right:10%;top:35%;}
+.s3{left:12%;bottom:20%;}
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-12px)}
+}
+@media(max-width:480px){
+.logo{
+font-size:52px;
+}
+.reward-value{
+font-size:58px;
+}
+.cta{
+font-size:18px;
+padding:18px;
+}
+}
+</style>
+</head>
+<body>
+<div class="bg-glow"></div>
+<div class="sparkle s1">✦</div>
+<div class="sparkle s2">✦</div>
+<div class="sparkle s3">✦</div>
+<div class="container">
+<div class="card">
+<div class="logo">COACH</div>
+<div class="reward-card">
+<div class="reward-label">
+EXCLUSIVE REWARD VALUE
+</div>
+<div class="reward-value">
+$500
+</div>
+<div class="reward-divider"></div>
+<div class="reward-desc">
+Redeemable online & in-store, anywhere
+</div>
+</div>
+<div class="steps">
+<div class="step">
+<div class="number">1</div>
+<span>Click The Button Below</span>
+</div>
+<div class="step">
+<div class="number">2</div>
+<span>Enter Your Basic Info</span>
+</div>
+<div class="step">
+<div class="number">3</div>
+<span>Complete 4–5 Deals</span>
+</div>
+<div class="step">
+<div class="number">4</div>
+<span>Receive Your Reward 🎉</span>
+</div>
+</div>
+<div class="trust">
+<span>✓ Verified</span>
+<span>🔒 Secure</span>
+<span>⚡ Instant</span>
+</div>
+<button class="cta">
+CLAIM OFFER NOW →
+</button>
+<div class="disclaimer">
+Terms and conditions apply
+</div>
+</div>
+<div class="social">
+<div class="avatars">
+<div class="avatar"></div>
+<div class="avatar"></div>
+<div class="avatar"></div>
+<div class="avatar"></div>
+</div>
+<p>
+Join thousands of shoppers who have claimed their Coach Rewards.
+</p>
+</div>
+<div class="benefits">
+<div class="benefit">
+<h3>🎁 COACH Rewards</h3>
+<p>Exclusive rewards just for you.</p>
+</div>
+<div class="benefit">
+<h3>⏱ Takes Less Than 5 Minutes</h3>
+<p>Quick and easy process.</p>
+</div>
+<div class="benefit">
+<h3>🏷️ Simple Steps, Big Rewards</h3>
+<p>Complete a few deals and get rewarded.</p>
+</div>
+<div class="benefit">
+<h3>👥 Thousands of Happy Shoppers</h3>
+<p>Real people. Real rewards.</p>
+</div>
+</div>
+<div class="footer">
+© 2026 Coach Rewards. All rights reserved.
+</div>
+</div>
+</body>
+</html>
